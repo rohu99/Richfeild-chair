@@ -1,0 +1,2755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richfield Chairs</title>
+    <link rel="icon" type="" href="images/logo.png">
+    <!-- CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+       <!-- Include AOS CSS in the head -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- AOS initialization at the end of the body -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+         <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    
+     <!-- <script src="script.js"></script> -->
+    
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <!-- Left Side: Welcome message -->
+                            <div id="image"
+                                class="col-md-5 d-flex flex-column justify-content-center align-items-center bg-primary text-white">
+                                <h1 class="mb-3">WELCOME RICHFIELD CHAIRS</h1>
+                                <pre class="mb-4 text-center">Start your journey with us.</pre>
+                                <pre class="text-center">Let's create unforgettable
+memories together!</pre>
+                            </div>
+
+                            <!-- Right Side: Sign-up Form -->
+                            <div class="col-md-7 d-flex flex-column justify-content-center bg-white sign-up-container">
+                                <div class="sign-up-form text-center mx-auto">
+                                    <form id="signUpForm">
+                                        <h1 class="mb-3">LOGIN</h1>
+                                        <!-- <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Username" required>
+                                    </div> -->
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control" placeholder="Email" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="password" class="form-control" placeholder="Password" required>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary w-100 mb-3">SIGN IN</button>
+                                    </form>
+                                    <pre>YOU HAVE NOT ACCOUNT? <a href="#">SIGN UP</a>.</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   <!-- navebar start -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                    <div class="container-fluid">
+                        <img src="images/logo.png"  alt="" width="80px" style="margin-left: 50px;height: 80px;">
+                        <h1 class="head" id="head">
+                            Richfield Chairs </h1>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"href="#homes">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#our chairs">Our Chairs</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"href="#about">About Us</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active " aria-current="page"href="#contact">Contact Us</a>
+                          </li>
+
+                       
+                        <form class="d-flex ms-4">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-secondary outline-success " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                          </form>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+
+                <div class="hero">
+
+                    <video autoplay loop muted plays-inline class="back-video" id="homes">
+                        <source src="images/videochairs.mp4" type="video/mp4">
+                    </video>
+                    <div class="content" id="content">
+                        <h1>Richfield Chairs</h1>
+
+                    </div>
+                </div>
+                </div>
+     
+      
+        <!-- navebar end -->
+
+        <!-- Welcome to richfied chairs start -->
+        <div class="row">
+            <div id="our chairs" class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div class="container" id="home">
+                    <section>
+                        <h2 class="one" id="one">Welcome to Richfield Chairs</h2>
+                        <p id="description">
+                            Welcome to Richfield Chairs, where comfort meets style!<br>
+                            Explore our wide range of quality chairs, perfect for every space.<br>
+                            From home to office, we bring you seating solutions that last.<br>
+                            Sit back, relax, and let Richfield Chairs elevate your comfort!<br>
+                            Explore our variety of chairs from different brands that suit every requirement.
+                        </p>
+                        <div class="brand-buttons" id="brand-buttons">
+                            <a href="#rich"><button onclick="showBrand('Richfield chairs')">Richfield
+                                    chairs</button></a>
+                            <a href="#design"><button onclick="showBrand('Design Master')">Design Master</button></a>
+                            <a href="#lootus"><button onclick="showBrand('Lootus Furniture')">Lootus
+                                    Furniture</button></a>
+                            <a href="#charming"><button onclick="showBrand('Charming Chairs')">Charming
+                                    Chairs</button></a>
+                            <a href="#ribbin"><button onclick="showBrand('Ribbin Chairs')">Ribbin Chairs</button></a>
+                            <a href="#varsage"><button onclick="showBrand('Versage Chairs')">Versage Chairs</button></a>
+                        </div>
+                    </section>
+
+
+
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Welcome to richfied chairs  End-->
+
+        <!-- brands detail -->
+        <!-- richfield Details Section -->
+
+        <div class="row">
+            <div class="col-md-6" data-aos="fade-right">
+                <div class="brand-details"
+                    style="font-family: Georgia, 'Times New Roman', Times, serif, Times, serif; font-size: 18px; font-style: oblique;">
+                    <h3 id="rich" style="font-style: italic; font-size: 50px; font-family: Georgia, 'Times New Roman', Times, serif;">Richfield Chairs</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Brand:</strong> Richfield Chairs</li>
+                        <li class="list-group-item"><strong>Category:</strong> Office & Home Chairs</li>
+                        <li class="list-group-item"><strong>Features:</strong> Comfortable, Ergonomic, Stylish</li>
+                        <li class="list-group-item"><strong>Materials:</strong> Leather, Fabric, Metal</li>
+                        <li class="list-group-item"><strong>Warranty:</strong> 2 Years</li>
+                    </ul>
+                    <pre style="font-family: 'Times New Roman', Times, serif; font-size: 18px; font-style: oblique;">Richfield Chairs offers premium seating solutions for  your  home and  office
+needs. Our chairs are designed for comfort and durability, blending modern
+style with ergonomic design.
+                    </pre>
+                </div>
+            </div>
+
+            <!-- Video Section -->
+            <div class="col-md-6" data-aos="fade-left">
+                <div class="video-container">
+                    <!-- <h3>Product Video</h3> -->
+                    <video src="images/design.mp4" title="Richfield Chairs Video" autoplay muted controls width="100%"
+                        height="auto"></video>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Richfield Chairs start -->
+
+            <!-- <h2 class="rchair">Richfield Chairs</h2> -->
+     
+        <div class="row" class="rchair"> 
+            <div class="col-lg-12 col-xl-12 col-xl-lg-12 col-md-12 col-sm-12"data-aos="fade-up">
+           <div class="rf">
+            <!--previous and next buttons-->
+            <button class="carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="owl-carousel owl-theme">  
+            <div class="item">
+                    <div class="image-container">
+                        <img src="./img/RF-1.jpg"  alt="Image 1" class="image-1">
+                        <img src="img/V-12.jpg" alt="Image 2" class="image-2">
+                        <div class="icon"> 
+                            <div class="clipboard-icon" >
+                            <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                            </div>
+                            <div class="quick-share-icon">
+                            <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                            </div>
+                        </div>
+                        <div class="download-icon" >
+                            <a href="./img/RF-1.jpg" download title="Download">
+                                <i class="fa-solid fa-circle-down"></i>
+                            </a>
+                        </div>
+                        </div>
+               <h4>Darby - Side Chair</h4><hr>
+              <h6>Starting List <b> $824.78</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/RF-2.jpg" alt="Image 1" class="image-1">
+                    <img src="img/V-11.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/RF-2.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+               <h4 >Richfield Antique Bronze Chair</h4><hr>
+               <h6>Starting List <b> $678.89</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/RF-3.jpg"  alt="Image 1" class="image-1">
+                    <img src="img/V-10.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="img/RF-3.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Barnwell Antique Bronze Chair</h4><hr>
+                <h6>Starting List <b> $782.1</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/RF-4.jpg"  alt="Image 1" class="image-1">
+                    <img src="img/V-9.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/RF-4.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4> Silver Side Chair</h4><hr>
+                <h6>Starting List <b> $782</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/RF-5.jpg"  alt="Image 1" class="image-1">
+                    <img src="img/V-8.png" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/RF-5.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Richfield Counter Height Stool</h4><hr>
+                <h6>Starting List <b> $615.5</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/RF-6.jpg"  alt="Image 1" class="image-1">
+                    <img src="img/V-7.png" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/RF-6.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Barnwell Antique Bronze Side Chair</h4><hr>
+                <h6>Starting List <b> $591</b></h6>
+            </div> 
+            <div class="item">
+                <div class="image-container">
+                    <img src="img/RF-7.jpg"  alt="Image 1" class="image-1">
+                    <img src="img/V-6.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="img/RF-7.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Ashton Arm Chair</h4><hr>
+                <h6>Starting List <b>  $623.8</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="img/RF-8.jpg" alt="Image 1" class="image-1">
+                    <img src="img/V-5.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="img/RF-8.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Dover Arm Chair</h4><hr>
+                <h6>Starting List <b> $540</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="img/RF-9.jpg"  alt="Image 1" class="image-1">
+                    <img src="img/V-4.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="img/RF-9.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Layton Host Arm Chair</h4><hr>
+                <h6>Starting List <b> $637.45</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="img/RF-10.jpg"  alt="Image 1" class="image-1">
+                    <img src="img/V-3.png" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="img/RF-10.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Donovan Arm Chair</h4><hr>
+                <h6>Starting List <b>$572.87</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="img/RF-11.jpg"  alt="Image 1" class="image-1">
+                    <img src="img/V-2.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="img/RF-11.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Davidson Counter Height Stool</h4><hr>
+                <h6>Starting List <b> $808</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="img/RF-12.jpg"  alt="Image 1" class="image-1">
+                    <img src="img/V-1.png" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="img/RF-12.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Lynden Counter Stool Tapered Legs</h4><hr>
+                <h6>Starting List <b> $183.3</b></h6>
+            </div>
+          
+       
+        </div>
+        </div>
+            </div>
+        </div>
+        <!-- Richfield Chairs end -->
+
+            <!-- Design Master Details Section -->
+
+        <div class="row">
+            <div class="col-md-6"data-aos="fade-right">
+                <div class="brand-details"
+                    style="font-family: 'Times New Roman', Times, serif; font-size: 18px; font-style: oblique;">
+                    <h3 id="design" style="font-style: italic; font-size: 50px; font-family: Georgia, 'Times New Roman', Times, serif; padding-bottom: 20px;">Design Master</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Brand:</strong> Design Master</li>
+                        <li class="list-group-item"><strong>Category:</strong> Office & Home Chairs</li>
+                        <li class="list-group-item"><strong>Features:</strong> Comfortable, Ergonomic, Stylish</li>
+                        <li class="list-group-item"><strong>Materials:</strong> Leather, Fabric, Metal</li>
+                        <li class="list-group-item"><strong>Warranty:</strong> 2 Years</li>
+                    </ul>
+                    <pre style="font-family: 'Times New Roman', Times, serif; font-size: 18px; font-style: oblique;">Design Chairs offers premium seating solutions for  your  home and  office
+needs. Our chairs are designed for comfort and durability, blending modern
+style with ergonomic design.
+                    </pre>
+                </div>
+            </div>
+
+            <!-- Video Section -->
+            <div class="col-md-6"data-aos="fade-left">
+                <div class="video-container">
+                    <!-- <h3>Product Video</h3> -->
+                    <video src="images/varsage.mp4" title="Richfield Chairs Video" autoplay muted controls width="100%"
+                        height="auto"></video>
+                </div>
+            </div>
+
+        </div>
+        <div class="row"> 
+            <div class="col-lg-12 col-xl-12 col-xl-lg-12 col-md-12 col-sm-12"data-aos="fade-up">
+           <div class="dm">
+            <!--previous and next buttons-->
+            <button class="carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="owl-carousel owl-theme">  
+
+                <div class="item">
+                    <div class="image-container">
+                        <img src="./img/DM-1.avif"  alt="Image 1" class="image-1">
+                        <img src="img/R-12.jpg" alt="Image 2" class="image-2">
+                        <div class="icon"> 
+                            <div class="clipboard-icon" >
+                            <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                            </div>
+                            <div class="quick-share-icon">
+                            <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                            </div>
+                        </div>
+                        <div class="download-icon" >
+                            <a href="./img/DM-1.avif" download title="Download">
+                                <i class="fa-solid fa-circle-down"></i>
+                            </a>
+                        </div>
+                        </div>
+               <h4>Madera Side Chair</h4><hr>
+              <h6>Starting List <b> $624.78</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/DM-2.avif"  alt="Image 1" class="image-1">
+                    <img src="img/R-11.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/DM-2.avif" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+               <h4 >Estero Side Chair</h4><hr>
+               <h6>Starting List <b> $348.8</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/DM-3.avif"  alt="Image 1" class="image-1">
+                    <img src="img/R-10.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/DM-3.avif" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+            <h4>Christiana Side Chair</h4><hr>
+                <h6>Starting List <b> $232.1</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/DM-4.avif"  alt="Image 1" class="image-1">
+                    <img src="img/R-9.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/DM-4.avif" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4> Fairbanks Studio Chair Antique Bronze</h4><hr>
+                <h6>Starting List <b> $452</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/DM-5.avif"  alt="Image 1" class="image-1">
+                    <img src="img/R-8.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/DM-5.avif" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Fairbanks Arm Chair - AB</h4><hr>
+                <h6>Starting List <b> $6134</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/DM-6.avif" alt="Image 1" class="image-1">
+                    <img src="img/R-7.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/DM-6.avif" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4> Edgemere Arm Chair</h4><hr>
+                <h6>Starting List <b> $591.76</b></h6>
+            </div> 
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/DM-7.avif"  alt="Image 1" class="image-1">
+                    <img src="img/R-6.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/DM-7.avif" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Sartell Side Chair</h4><hr>
+                <h6>Starting List <b>  $623.8</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/DM-8.avif"  alt="Image 1" class="image-1">
+                    <img src="img/R-5.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/DM-8.avif" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Edgewood Arm Chair</h4><hr>
+                <h6>Starting List <b> $540</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/DM-9.avif"  alt="Image 1" class="image-1">
+                    <img src="img/R-4.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/DM-9.avif" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4> Leander Side Chair</h4><hr>
+                <h6>Starting List <b> $127.45</b></h6>
+            </div>
+                <div class="item">
+                    <div class="image-container">
+                        <img src="./img/DM-10.avif"  alt="Image 1" class="image-1">
+                        <img src="img/R-3.jpg" alt="Image 2" class="image-2">
+                        <div class="icon"> 
+                            <div class="clipboard-icon" >
+                            <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                            </div>
+                            <div class="quick-share-icon">
+                            <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                            </div>
+                        </div>
+                        <div class="download-icon" >
+                            <a href="./img/DM-10.avif" download title="Download">
+                                <i class="fa-solid fa-circle-down"></i>
+                            </a>
+                        </div>
+                        </div>
+                <h4>Donovan Arm Chair</h4><hr>
+                <h6>Starting List <b>$572.87</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/DM-11.avif" alt="Image 1" class="image-1">
+                    <img src="img/R-2.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/DM-11.avif" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Claremont Side Chair</h4><hr>
+                <h6>Starting List <b> $808</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/DM-12.avif"  alt="Image 1" class="image-1">
+                    <img src="img/R-1.webp" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/DM-12.avif" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Hartwick Arm Chair</h4><hr>
+                <h6>Starting List <b> $173.3</b></h6>
+            </div>
+          
+       
+        </div>
+    </div>
+            </div>
+        </div>
+
+    
+            <!-- Lootus Furniture Details Section -->
+
+        <div class="row">
+            <div class="col-md-6"data-aos="fade-right">
+                <div class="brand-details"
+                    style="font-family: 'Times New Roman', Times, serif; font-size: 18px; font-style: oblique;">
+                    <h3 id="lootus" style="font-style: italic; font-size: 50px; font-family: Georgia, 'Times New Roman', Times, serif; padding-bottom: 20px;">Lootus Furniture</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Brand:</strong> Lootus Furniture</li>
+                        <li class="list-group-item"><strong>Category:</strong> Office & Home Chairs</li>
+                        <li class="list-group-item"><strong>Features:</strong> Comfortable, Ergonomic, Stylish</li>
+                        <li class="list-group-item"><strong>Materials:</strong> Leather, Fabric, Metal</li>
+                        <li class="list-group-item"><strong>Warranty:</strong> 2 Years</li>
+                    </ul>
+                    <pre style="font-family: 'Times New Roman', Times, serif; font-size: 18px; font-style: oblique;">Lootus Chairs offers premium seating solutions for  your  home and  office
+needs. Our chairs are designed for comfort and durability, blending modern
+style with ergonomic design.
+                    </pre>
+                </div>
+            </div>
+
+            <!-- Video Section -->
+            <div class="col-md-6"data-aos="fade-left">
+                <div class="video-container">
+                    <!-- <h3>Product Video</h3> -->
+                    <video src="images/lootus.mp4" title="Richfield Chairs Video" autoplay muted controls width="100%"
+                        height="auto"></video>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row"> 
+            <div class="col-lg-12 col-xl-12 col-xl-lg-12 col-md-12 col-sm-12"data-aos="fade-up">
+            <div class="l">
+            <!--previous and next buttons-->
+            <button class="carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="owl-carousel owl-theme">  
+    
+                <div class="item">
+                    <div class="image-container">
+                        <img src="./img/L-1.png" alt="Image 1" class="image-1">
+                        <img src="img/RF-12.jpg" alt="Image 2" class="image-2">
+                        <div class="icon"> 
+                            <div class="clipboard-icon" >
+                            <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                            </div>
+                            <div class="quick-share-icon">
+                            <h6 style="font-size: 14px;font-weight: bold;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                            </div>
+                        </div>
+                        <div class="download-icon" >
+                            <a href="./img/L-1.png" download title="Download">
+                                <i class="fa-solid fa-circle-down"></i>
+                            </a>
+                        </div>
+                        </div>
+               <h4>Sadie II Seating</h4><hr>
+              <h6>Starting List <b> $524</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/L-2.png" alt="Image 1" class="image-1">
+                    <img src="img/RF-11.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/L-2.png" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+               <h4 >Sigsbee Seating</h4><hr>
+               <h6>Starting List <b> $678</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/L-3.png"alt="Image 1" class="image-1">
+                    <img src="img/RF-10.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/L-3.png" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Alfred Seating</h4><hr>
+                <h6>Starting List <b> $782</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/L-4.png" alt="Image 1" class="image-1">
+                    <img src="img/RF-9.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/L-4.png" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Rita Lounge</h4><hr>
+                <h6>Starting List <b> $782</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/L-5.png" alt="Image 1" class="image-1">
+                    <img src="img/RF-8.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/L-5.png" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Atlantis Seating</h4><hr>
+                <h6>Starting List <b> $615</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/L-6.png"alt="Image 1" class="image-1">
+                    <img src="img/RF-7.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/L-6.png" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Harper Seating</h4><hr>
+                <h6>Starting List <b> $591</b></h6>
+            </div> 
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/L-7.png" alt="Image 1" class="image-1">
+                    <img src="img/RF-6.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/L-7.png" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Wood Melissa Seating</h4><hr>
+                <h6>Starting List <b>  $623</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/L-8.png" alt="Image 1" class="image-1">
+                    <img src="img/RF-5.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/L-8.png" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Opla Outdoor Seating</h4><hr>
+                <h6>Starting List <b> $540</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/L-9.png" alt="Image 1" class="image-1">
+                    <img src="img/RF-4.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/L-9.png" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Brooke Seating</h4><hr>
+                <h6>Starting List <b> $634</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/L-10.png"alt="Image 1" class="image-1">
+                    <img src="img/RF-3.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/L-10.png" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Hugh Chair</h4><hr>
+                <h6>Starting List <b>$572</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/L-11.png"alt="Image 1" class="image-1">
+                    <img src="img/RF-2.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/L-11.png" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Harper Seating</h4><hr>
+                <h6>Starting List <b> $808</b></h6>
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/L-12.png" alt="Image 1" class="image-1">
+                    <img src="img/RF-1.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/L-12.png" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Andy Lounge</h4><hr>
+                <h6>Starting List <b> $1833</b></h6>
+            </div>
+          
+        </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Charming Chairs Details Section -->
+
+        <div class="row">
+            <div class="col-md-6"data-aos="fade-right">
+                <div class="brand-details"
+                    style="font-family: 'Times New Roman', Times, serif; font-size: 18px; font-style: oblique;">
+                    <h3 id="charming" style="font-style: italic; font-size: 50px; font-family: Georgia, 'Times New Roman', Times, serif; padding-bottom: 20px;">Charming Chairs</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Brand:</strong> Charming Chairs</li>
+                        <li class="list-group-item"><strong>Category:</strong> Office & Home Chairs</li>
+                        <li class="list-group-item"><strong>Features:</strong> Comfortable, Ergonomic, Stylish</li>
+                        <li class="list-group-item"><strong>Materials:</strong> Leather, Fabric, Metal</li>
+                        <li class="list-group-item"><strong>Warranty:</strong> 2 Years</li>
+                    </ul>
+                    <pre style="font-family: 'Times New Roman', Times, serif; font-size: 18px; font-style: oblique;">Charming Chairs offers premium seating solutions for  your  home and  office
+needs. Our chairs are designed for comfort and durability, blending modern
+style with ergonomic design.
+                    </pre>
+                </div>
+            </div>
+
+            <!-- Video Section -->
+            <div class="col-md-6"data-aos="fade-left">
+                <div class="video-container">
+                    <!-- <h3>Product Video</h3> -->
+                    <video src="images/charming.mp4" title="Richfield Chairs Video" autoplay muted controls width="100%"
+                        height="auto"></video>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row"> 
+            <div class="col-lg-12 col-xl-12 col-xl-lg-12 col-md-12 col-sm-12"data-aos="fade-up">
+            <div class="c">
+            <!--previous and next buttons-->
+            <button class="carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-next"><i class="fa-solid fa-chevron-right"></i></button>    
+            <div class="owl-carousel owl-theme">  
+    
+            <div class="item">
+                    <div class="image-container">
+                        <img src="./img/C-1.jpg" alt="Image 1" class="image-1">
+                        <img src="img/DM-12.avif" alt="Image 2" class="image-2">
+                        <div class="icon"> 
+                            <div class="clipboard-icon" >
+                            <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                            </div>
+                            <div class="quick-share-icon">
+                            <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                            </div>
+                        </div>
+                        <div class="download-icon" >
+                            <a href="./img/C-1.jpg" download title="Download">
+                                <i class="fa-solid fa-circle-down"></i>
+                            </a>
+                        </div>
+                        </div>
+               <h4>Alloy Chair (Copper) </h4><hr>
+               <h6>Standard Rate <b>$13</b></h6> 
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/C-2.jpg" alt="Image 1" class="image-1">
+                    <img src="img/DM-11.avif" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/C-2.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+               <h4> Alloy Chair (Silver)</h4><hr>
+               <h6>Standard Rate <b>$13</b></h6> 
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/C-3.jpg" alt="Image 1" class="image-1">
+                    <img src="img/DM-10.avif" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/C-3.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Armed Louis Chair (Ghost)</h4><hr>
+                <h6>Standard Rate <b>$25</b></h6> 
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/C-4.jpg" alt="Image 1" class="image-1">
+                    <img src="img/DM-9.avif" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/C-4.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Bentwood Chair</h4><hr>
+                <h6>Standard Rate <b>$14</b></h6> 
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/C-5.jpg"alt="Image 1" class="image-1">
+                    <img src="img/DM-8.avif" alt="Image 2" class="image-2"> 
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/C-5.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Brayan Chair</h4><hr>
+                <h6>Standard Rate <b>$30</b></h6> 
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/C-6.jpg"alt="Image 1" class="image-1">
+                    <img src="img/DM-7.avif" alt="Image 2" class="image-2"> 
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/C-6.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Chameleon Fanfare Chair</h4><hr>
+                <h6>Standard Rate <b>$23.50</b></h6> 
+            </div> 
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/C-7.jpg" alt="Image 1" class="image-1">
+                    <img src="img/DM-6.avif" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/C-7.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Tycen Dining Chair</h4><hr>
+                <h6>Standard Rate <b>$30</b></h6> 
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/C-8.jpg"alt="Image 1" class="image-1">
+                    <img src="img/DM-5.avif" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/C-8.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Chiavari Chair (Gold)</h4><hr>
+                <h6>Standard Rate <b>$10</b></h6> 
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/C-9.jpg" alt="Image 1" class="image-1">
+                    <img src="img/DM-4.avif" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/C-9.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Crossback Chair (Limewash)</h4><hr>
+                <h6>Standard Rate <b>$13</b></h6> 
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/C-10.jpg"alt="Image 1" class="image-1">
+                    <img src="img/DM-3.avif" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/C-10.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Denali Chair</h4><hr>
+                <h6>Standard Rate <b>$15</b></h6> 
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/C-11.jpg" alt="Image 1" class="image-1">
+                    <img src="img/DM-2.avif" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/C-11.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Italia Chair (Black)</h4><hr>
+                <h6>Standard Rate <b>$12</b></h6> 
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/C-12.png" alt="Image 1" class="image-1">
+                    <img src="img/DM-1.avif" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/C-12.png" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Gerwyn Chair</h4><hr>
+                <h6>Standard Rate <b>$30</b></h6> 
+            </div>
+          
+        </div>
+          </div>  
+            </div>
+        </div>
+
+            <!-- Ribbin Chairs Details Section -->
+
+        <div class="row">
+            <div class="col-md-6"data-aos="fade-right">
+                <div class="brand-details"
+                    style="font-family: 'Times New Roman', Times, serif; font-size: 18px; font-style: oblique;">
+                    <h3 id="ribbin" style="font-style: italic; font-size: 50px; font-family: Georgia, 'Times New Roman', Times, serif; padding-bottom: 20px;">Ribbin Chairs</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Brand:</strong> Ribbin Chairs</li>
+                        <li class="list-group-item"><strong>Category:</strong> Office & Home Chairs</li>
+                        <li class="list-group-item"><strong>Features:</strong> Comfortable, Ergonomic, Stylish</li>
+                        <li class="list-group-item"><strong>Materials:</strong> Leather, Fabric, Metal</li>
+                        <li class="list-group-item"><strong>Warranty:</strong> 2 Years</li>
+                    </ul>
+                    <pre style="font-family: 'Times New Roman', Times, serif; font-size: 18px; font-style: oblique;">Ribbin Chairs offers premium seating solutions for  your  home and  office
+needs. Our chairs are designed for comfort and durability, blending modern
+style with ergonomic design.
+                    </pre>
+                </div>
+            </div>
+
+            <!-- Video Section -->
+            <div class="col-md-6"data-aos="fade-left">
+                <div class="video-container">
+                    <!-- <h3>Product Video</h3> -->
+                    <video src="images/ribbin.mp4" title="Ribbin Chairs Video" autoplay muted controls width="100%"
+                        height="auto"></video>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row"> 
+            <div class="col-lg-12 col-xl-12 col-xl-lg-12 col-md-12 col-sm-12"data-aos="fade-up">
+            <div class="r">
+            <!--previous and next buttons-->
+            <button class="carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="owl-carousel owl-theme">  
+    
+                <div class="item">
+                    <div class="image-container">
+                        <img src="./img/R-1.webp" alt="Image 1" class="image-1">
+                        <img src="img/V-12.jpg" alt="Image 2" class="image-2">
+                        <div class="icon"> 
+                            <div class="clipboard-icon" >
+                            <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                            </div>
+                            <div class="quick-share-icon">
+                            <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                            </div>
+                        </div>
+                        <div class="download-icon" >
+                            <a href="./img/R-1.webp" download title="Download">
+                                <i class="fa-solid fa-circle-down"></i>
+                            </a>
+                        </div>
+                        </div>
+               <h4>Ona Arm Chair</h4><hr>
+               <h6>Standard Rate <b>$1499</b></h6> 
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/R-2.jpg"  alt="Image 1" class="image-1">
+                    <img src="img/RF-4.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/R-2.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+               <h4>Cidra Chair</h4><hr>
+               <h6>Standard Rate <b>$1499</b></h6> 
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/R-3.jpg" alt="Image 1" class="image-1">
+                    <img src="img/RF-6.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/R-3.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>First Chair</h4><hr>
+                <h6>Standard Rate <b>$899</b></h6> 
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/R-4.jpg"  alt="Image 1" class="image-1">
+                    <img src="img/DM-5.avif" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/R-4.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Be My Guest Dining Chair</h4><hr>
+                <h6>Standard Rate <b>$699</b></h6> 
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/R-5.jpg" alt="Image 1" class="image-1">
+                    <img src="img/DM-9.avif" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/R-5.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Brie Blue Armless Chair</h4><hr>
+                <h6>Standard Rate <b>$699</b></h6> 
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/R-6.jpg"  alt="Image 1" class="image-1">
+                    <img src="img/C-4.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/R-6.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Liam Side Chair</h4><hr>
+                <h6>Standard Rate <b>$899.1</b></h6> 
+            </div> 
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/R-7.jpg"  alt="Image 1" class="image-1">
+                    <img src="img/C-12.png" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/R-7.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Bali Side Chair</h4><hr>
+                <h6>Standard Rate <b>$297</b></h6> 
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/R-8.jpg" alt="Image 1" class="image-1">
+                    <img src="img/V-2.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/R-8.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Croix Chair</h4><hr>
+                <h6>Standard Rate <b>$100.1</b></h6> 
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/R-9.jpg" alt="Image 1" class="image-1">
+                    <img src="img/V-12.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/R-9.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Cosette Side Chair</h4><hr>
+                <h6>Standard Rate <b>$13.11</b></h6> 
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/R-10.jpg"  alt="Image 1" class="image-1">
+                    <img src="img/V-9.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/R-10.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Geneva Upholstered Side Chair</h4><hr>
+                <h6>Standard Rate <b>$891</b></h6> 
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/R-11.jpg"  alt="Image 1" class="image-1">
+                    <img src="img/RF-5.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/R-11.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Brie White Armless Chair</h4><hr>
+                <h6>Standard Rate <b>$699</b></h6> 
+            </div>
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/R-12.jpg"  alt="Image 1" class="image-1">
+                    <img src="img/DM-4.avif" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/R-12.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Remix Woven Chair</h4><hr>
+                <h6>Standard Rate <b>$899</b></h6> 
+            </div>
+          
+        </div>
+            </div>
+            </div>
+        </div>
+
+            <!-- Versage Chairs Details Section -->
+
+        <div class="row">
+            <div class="col-md-6"data-aos="fade-right">
+                <div class="brand-details"
+                    style="font-family: 'Times New Roman', Times, serif; font-size: 18px; font-style: oblique;">
+                    <h3 id="varsage" style="font-style: italic; font-size: 50px; font-family: Georgia, 'Times New Roman', Times, serif; padding-bottom: 20px;">Versage Chairs</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>Brand:</strong> Versage Chairs</li>
+                        <li class="list-group-item"><strong>Category:</strong> Office & Home Chairs</li>
+                        <li class="list-group-item"><strong>Features:</strong> Comfortable, Ergonomic, Stylish</li>
+                        <li class="list-group-item"><strong>Materials:</strong> Leather, Fabric, Metal</li>
+                        <li class="list-group-item"><strong>Warranty:</strong> 2 Years</li>
+                    </ul>
+                    <pre style="font-family: 'Times New Roman', Times, serif; font-size: 18px; font-style: oblique;">Varsage Chairs offers premium seating solutions for  your  home and  office
+needs. Our chairs are designed for comfort and durability, blending modern
+style with ergonomic design.
+                    </pre>
+                </div>
+            </div>
+
+            <!-- Video Section -->
+            <div class="col-md-6"data-aos="fade-left">
+                <div class="video-container">
+                    <!-- <h3>Product Video</h3> -->
+                    <video src="images/videoplayback (1).mp4" title="Richfield Chairs Video" autoplay muted controls
+                        width="100%" height="auto"></video>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row"> 
+            <div class="col-lg-12 col-xl-12 col-xl-lg-12 col-md-12 col-sm-12"data-aos="fade-up">
+            <div class="v">
+            <!--previous and next buttons-->
+            <button class="carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="owl-carousel owl-theme">  
+    
+                <div class="item">
+                    <div class="image-container">
+                        <img src="./img/V-1.png"  alt="Image 1" class="image-1">
+                        <img src="img/C-12.png" alt="Image 2" class="image-2">
+                        <div class="icon"> 
+                            <div class="clipboard-icon" >
+                            <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                            </div>
+                            <div class="quick-share-icon">
+                            <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                            </div>
+                        </div>
+                        <div class="download-icon" >
+                            <a href="./img/V-1.png" download title="Download">
+                                <i class="fa-solid fa-circle-down"></i>
+                            </a>
+                        </div>
+                        </div>
+               <h4>Darien Upholstered Arm Chair</h4><hr>
+               <h6>Standard Rate <b>$199.1</b></h6> 
+            </div>
+           
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/V-2.jpg"  alt="Image 1" class="image-1">
+                    <img src="img/C-11.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/V-2.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+               <h4>Carly Dining Chair</h4><hr>
+               <h6>Standard Rate <b>$1559</b></h6> 
+            </div>
+           
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/V-3.png" alt="Image 1" class="image-1">
+                    <img src="img/C-10.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/V-3.png" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Montreal Side Chair</h4><hr>
+                <h6>Standard Rate <b>$899</b></h6> 
+            </div>
+            
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/V-4.jpg" alt="Image 1" class="image-1">
+                    <img src="img/C-9.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/V-4.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Hyde Park Arm Chair II</h4><hr>
+                <h6>Standard Rate <b>$479</b></h6> 
+            </div>
+           
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/V-5.jpg"  alt="Image 1" class="image-1">
+                    <img src="img/C-8.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/V-5.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Charm Side Chair</h4><hr>
+                <h6>Standard Rate <b>$979</b></h6> 
+            </div>
+           
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/V-6.jpg"  alt="Image 1" class="image-1">
+                    <img src="img/C-7.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/V-6.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Liam Side Chair</h4><hr>
+                <h6>Standard Rate <b>$899.1</b></h6> 
+            </div> 
+          
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/V-7.png"  alt="Image 1" class="image-1">
+                    <img src="img/C-6.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/V-7.png" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Hyde Park Arm Chair II</h4><hr>
+                <h6>Standard Rate <b>$717</b></h6> 
+            </div>
+           
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/V-8.png"  alt="Image 1" class="image-1">
+                    <img src="img/C-5.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/V-8.png" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Nassau Side Chair</h4><hr>
+                <h6>Standard Rate <b>$233.1</b></h6> 
+            </div>
+            
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/V-9.jpg"  alt="Image 1" class="image-1">
+                    <img src="img/C-4.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/V-9.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Vesper Chair</h4><hr>
+                <h6>Standard Rate <b>$15.11</b></h6> 
+            </div>
+            
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/V-10.jpg"  alt="Image 1" class="image-1">
+                    <img src="img/C-3.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/V-10.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Sylvia Low Dining Chair</h4><hr>
+                <h6>Standard Rate <b>$891.56</b></h6> 
+            </div>
+          
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/V-11.jpg"  alt="Image 1" class="image-1">
+                    <img src="img/C-2.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/V-11.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Hyde Park Side Chair II</h4><hr>
+                <h6>Standard Rate <b>$899</b></h6> 
+            </div>
+         
+            <div class="item">
+                <div class="image-container">
+                    <img src="./img/V-12.jpg" alt="Image 1" class="image-1">
+                    <img src="img/C-1.jpg" alt="Image 2" class="image-2">
+                    <div class="icon"> 
+                        <div class="clipboard-icon" >
+                        <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                        </div>
+                        <div class="quick-share-icon">
+                        <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                        </div>
+                    </div>
+                    <div class="download-icon" >
+                        <a href="./img/V-12.jpg" download title="Download">
+                            <i class="fa-solid fa-circle-down"></i>
+                        </a>
+                    </div>
+                    </div>
+                <h4>Dania Side Chair</h4><hr>
+                <h6>Standard Rate <b>$359.5</b></h6> 
+            </div>
+          
+        </div>
+            </div>
+            </div>
+        </div>
+
+<!-- BEST SELLER START -->
+
+
+
+
+    <div class="row"> 
+    <h2 data-aos="fade-up" style="font-style: italic; font-size: 60px; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; margin-bottom: 100px;">Best Sellers</h2>
+
+    <div class="col-lg-12 col-xl-12 col-xl-lg-12 col-md-12 col-sm-12"data-aos="fade-up">
+    <div class="bs">
+    <!--previous and next buttons-->
+    <button class="carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="owl-carousel owl-theme">  
+
+        <div class="item">
+            <div class="image-container">
+                <img src="./img/BS-1.jpg" alt="Bel Air Lule">
+                <div class="icon"> 
+                    <div class="clipboard-icon" >
+                    <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                    </div>
+                    <div class="quick-share-icon">
+                    <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                    </div>
+                </div>
+                <div class="download-icon" >
+                    <a href="./img/BS-1.jpg" download title="Download">
+                        <i class="fa-solid fa-circle-down"></i>
+                    </a>
+                </div>
+                </div>
+            
+            <h4>Bel Air Lule</h4>
+            <hr>
+            <b>$209.30</b> <del>$299.00</del>
+        </div>
+        
+        <div class="item">
+            <div class="image-container">
+                <img src="./img/BS-2.jpg" alt="Bel Air Lule">
+                <div class="icon"> 
+                    <div class="clipboard-icon" >
+                    <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                    </div>
+                    <div class="quick-share-icon">
+                    <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                    </div>
+                </div>
+                <div class="download-icon" >
+                    <a href="./img/BS-2.jpg" download title="Download">
+                        <i class="fa-solid fa-circle-down"></i>
+                    </a>
+                </div>
+                </div>
+       <h4 >Bergen Kubrick</h4><hr>
+       <b>$349.30</b> <del> $499.00</del>
+    </div>
+    <div class="item">
+        <div class="image-container">
+            <img src="./img/BS-3.jpg" alt="Bel Air Lule">
+            <div class="icon"> 
+                <div class="clipboard-icon" >
+                <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                </div>
+                <div class="quick-share-icon">
+                <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                </div>
+            </div>
+            <div class="download-icon" >
+                <a href="./img/BS-3.jpg" download title="Download">
+                    <i class="fa-solid fa-circle-down"></i>
+                </a>
+            </div>
+            </div>
+        <h4>Bergen Miro</h4><hr>
+        <b>$279.30</b> <del> $399.00</del>
+    </div>
+    <div class="item">
+        <div class="image-container">
+            <img src="./img/BS-4.jpg" alt="Bel Air Lule">
+            <div class="icon"> 
+                <div class="clipboard-icon" >
+                <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                </div>
+                <div class="quick-share-icon">
+                <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                </div>
+            </div>
+            <div class="download-icon" >
+                <a href="./img/BS-4.jpg" download title="Download">
+                    <i class="fa-solid fa-circle-down"></i>
+                </a>
+            </div>
+            </div>
+        <h4>Bel Air Swinton</h4><hr>
+        <b>$104.30</b> <del> $149.00</del>
+    </div>
+    <div class="item">
+        <div class="image-container">
+            <img src="./img/BS-5.jpg" alt="Bel Air Lule">
+            <div class="icon"> 
+                <div class="clipboard-icon" >
+                <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                </div>
+                <div class="quick-share-icon">
+                <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                </div>
+            </div>
+            <div class="download-icon" >
+                <a href="./img/BS-5.jpg" download title="Download">
+                    <i class="fa-solid fa-circle-down"></i>
+                </a>
+            </div>
+            </div>
+        <h4>Bel Air 2LG</h4><hr>
+        <b>$379.00</b> <del> $389.00</del>
+    </div>
+    <div class="item">
+        <div class="image-container">
+            <img src="./img/BS-6.jpg" alt="Bel Air Lule">
+            <div class="icon"> 
+                <div class="clipboard-icon" >
+                <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                </div>
+                <div class="quick-share-icon">
+                <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                </div>
+            </div>
+            <div class="download-icon" >
+                <a href="./img/BS-6.jpg" download title="Download">
+                    <i class="fa-solid fa-circle-down"></i>
+                </a>
+            </div>
+            </div>
+        <h4>Bergen Shona</h4><hr>
+        <b>$$209.30</b> <del> $299.00</del>
+    </div> 
+    <div class="item">
+        <div class="image-container">
+            <img src="./img/BS-7.jpg" alt="Bel Air Lule">
+            <div class="icon"> 
+                <div class="clipboard-icon" >
+                <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                </div>
+                <div class="quick-share-icon">
+                <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                </div>
+            </div>
+            <div class="download-icon" >
+                <a href="./img/BS-7.jpg" download title="Download">
+                    <i class="fa-solid fa-circle-down"></i>
+                </a>
+            </div>
+            </div>
+        <h4>Bergen Swinton</h4><hr>
+        <b>$199.00</b> <del> $299.00</del>
+    </div>
+    <div class="item">
+        <div class="image-container">
+            <img src="./img/BS-8.jpg" alt="Bel Air Lule">
+            <div class="icon"> 
+                <div class="clipboard-icon" >
+                <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                </div>
+                <div class="quick-share-icon">
+                <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                </div>
+            </div>
+            <div class="download-icon" >
+                <a href="./img/BS-8.jpg" download title="Download">
+                    <i class="fa-solid fa-circle-down"></i>
+                </a>
+            </div>
+            </div>
+        <h4>Bel Air Revy</h4><hr>
+        <b>$109.00</b> <del> $199.00</del>
+    </div>
+    <div class="item">
+        <div class="image-container">
+            <img src="./img/BS-9.jpg" alt="Bel Air Lule">
+            <div class="icon"> 
+                <div class="clipboard-icon" >
+                <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                </div>
+                <div class="quick-share-icon">
+                <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                </div>
+            </div>
+            <div class="download-icon" >
+                <a href="./img/BS-9.jpg" download title="Download">
+                    <i class="fa-solid fa-circle-down"></i>
+                </a>
+            </div>
+            </div>
+        <h4>Bergen Margot</h4><hr>
+        <b>$249.30</b> <del> $299.00</del>
+    </div>
+    <div class="item">
+        <div class="image-container">
+            <img src="./img/BS-10.jpg" alt="Bel Air Lule">
+            <div class="icon"> 
+                <div class="clipboard-icon" >
+                <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                </div>
+                <div class="quick-share-icon">
+                <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                </div>
+            </div>
+            <div class="download-icon" >
+                <a href="./img/BS-10.jpg" download title="Download">
+                    <i class="fa-solid fa-circle-down"></i>
+                </a>
+            </div>
+            </div>
+        <h4>Bel Air Lule 2</h4><hr>
+        <b>$199.30</b> <del> $259.00</del>
+    </div>
+    <div class="item">
+        <div class="image-container">
+            <img src="./img/BS-11.jpg" alt="Bel Air Lule">
+            <div class="icon"> 
+                <div class="clipboard-icon" >
+                <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                </div>
+                <div class="quick-share-icon">
+                <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                </div>
+            </div>
+            <div class="download-icon" >
+                <a href="./img/BS-11.jpg" download title="Download">
+                    <i class="fa-solid fa-circle-down"></i>
+                </a>
+            </div>
+            </div>
+        <h4>Bergen Revy</h4><hr>
+        <b>$249.00</b> <del> $299.00</del>
+    </div>
+    <div class="item">
+        <div class="image-container">
+            <img src="./img/BS-12.jpg" alt="Bel Air Lule">
+            <div class="icon"> 
+                <div class="clipboard-icon" >
+                <i class="fa-regular fa-clipboard" style="color: white;"></i>
+                </div>
+                <div class="quick-share-icon">
+                <h6 style="font-size: 14px;">  +Quick view   <i class="fa-solid fa-share"></i></h6>
+                </div>
+            </div>
+            <div class="download-icon" >
+                <a href="./img/BS-12.jpg" download title="Download">
+                    <i class="fa-solid fa-circle-down"></i>
+                </a>
+            </div>
+            </div>
+        <h4>Bergen Deon</h4><hr>
+        <b>$69.30</b> <del> $139.00</del>
+    </div>
+  
+</div>
+    </div>
+    </div>
+    </div>
+    <!-- Best Seller end -->
+
+
+
+
+        <!-- ABOUT US START -->
+
+        
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xxl-12"data-aos="fade-left">
+              <center>  <h1 id="about" style="margin-top: 100px;">ABOUT US</h1>
+                <span class="underlines"></span></center>
+                <div id="multiImageCarousel" class="carousel slide" data-bs-ride="carousel" style="padding-top: 50px;">
+                    <!-- Indicators -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#multiImageCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#multiImageCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#multiImageCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <!-- Add as many buttons as you have slides -->
+                    </div>
+
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <img src="images/about1.jpg" class="d-block w-100" alt="Image 1">
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <img src="img/contact-s3.jpg" class="d-block w-100" alt="Image 2">
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <img src="images/about3.png" class="d-block w-100" alt="Image 3" height="400px">
+                        </div>
+                        <!-- Additional slides can be added here -->
+                    </div>
+
+                    <!-- Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#multiImageCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#multiImageCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xl-6 col-xxl-6"data-aos="fade-right" style="padding-left: 100px;">
+                <h1 class="History">Our History</h1>
+                <span class="underline"></span>
+
+                <h4 class="story"data-aos="fade-left">
+                    Our story started with a problem (the best ideas usually do). Some ten years ago, our founder, Jenny
+                    Johnson, was furnishing her flat, while she realized the lack of affordable and quality furniture
+                    pieces available in the market. So she set out to collaborate with independent designers and makers
+                    to create pieces you’ll love, minus the mark-up.
+
+                    In 2010, Jenny got a chance to visit renowned chair manufacturers, Bergen and Bel Air. Surprised by
+                    the top-notch quality of their designs, along with the approach they took to protect the
+                    environment, she set out to team with them.
+
+                    Yet, they all knew that they lacked something: an organization that suits every taste and need of
+                    customers. That was when Bartlett came in with the versatility of a new brand in the industry, the
+                    last piece of the puzzle that they all needed. And so Richfield Chairs was born. The destination for
+                    creating your dream home.</h4>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xl-6 col-xxl-6"data-aos="fade-right"style="padding-left: 100px;">
+                <img src="images/about5.jpeg" alt="" height="450px" width="90%" class="History">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xl-1 col-xxl-1"></div>
+            <div class="col-lg-10 col-md-10 col-sm-10 col-xl-10 col-xxl-10" style="margin-top: -100px;">
+                <h2 class="vision"data-aos="fade-right">
+                    Our Vision</h2>
+                <center><span class="underline"></span></center>
+                <h5 class="grow" data-aos="fade-left">
+                    We continue to grow and add to the unique diversity of styles we offer in order to satisfy the most
+                    discriminating of shoppers. We’re all about the details start to finish. By selecting only the
+                    finest wood and quality hardware, our woodcrafters utilize the best-proven construction techniques
+                    to create furniture that is as durable as it is beautiful. Each piece is individually crafted, not
+                    mass-produced. Our desire is to provide you with the highest quality furniture at the best value.
+                </h5>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xl-1 col-xxl-1"></div>
+
+        
+
+
+        
+        
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xl-2 col-xxl-2">
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xl-8 col-xxl-8"data-aos="fade-left">
+                <h1 class="belive">"When it comes to your
+                    home, we believe you can have it all: great design and quality, at an affordable price"</h1>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xl-2 col-xxl-2">
+            </div>
+        </div>
+        
+
+        
+
+        <div class="row">
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xl-6 col-xxl-6" data-aos="fade-right"style="padding-left: 100px;">
+                <img src="images/about3.png" alt="" height="450px" width="100%">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xl-6 col-xxl-6" data-aos="fade-left" style="padding-left: 100px; padding-right: 90px;">
+                <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">Our Approach</h1>
+                <span class="underline" style="margin-bottom: 30px;"></span>
+                <h4 class="taking" data-aos="fade-right">
+                    We’re taking positive steps to reduce our impact on the planet. For us, that means retailing
+                    responsibly. We’ve set a number of goals to get us there. <br><br>
+
+                    Our commitment to great design has extended into making better business choices that minimise our
+                    impact on people and the planet. For 2021, we’re focusing on four key areas where we can really make
+                    a difference. This is just the start of our journey, so keep checking back for updates. <br><br>
+
+                    The way we see it, sustainability begins with responsible sourcing. From making sure our key
+                    materials create less environmental impact, through to selecting suppliers aligned with our core
+                    values. It’s not simply our business strategy, but our moral obligation. <br><br>
+
+                    Things like: eliminating all unnecessary plastic from our product packaging, and ensuring that the
+                    most environmentally impactful materials we use are 100% sustainably sourced.</h4>
+            </div>
+
+            <!-- <div class="col-lg-1 col-md-1 col-sm-1 col-xl-1 col-xxl-1"></div> -->
+
+        </div>
+
+        <div class="row">
+                 <div class="col-lg-6 col-md-6 col-sm-6 col-xl-6 col-xxl-6" data-aos="fade-left" style="padding-left: 100px;">
+                <h1 class="History">Our Community</h1>
+                <span class="underline"></span>
+                <h4 class="people"data-aos="fade-right">
+                    People are at the heart of what we do, and we’re proud to have created a community as passionate
+                    about design as we are. From reviews on our product pages to our 1.2 million Instagram fans, nothing
+                    makes us happier than seeing real people sharing our products in their homes.
+                </h4>
+            </div>
+                
+            
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xl-6 col-xxl-6" data-aos="fade-right">
+                <!-- Animation for image -->
+                <img src="images/our comunity.jpeg" alt="Our Community" height="450px" width="90%" style="padding-top: 50px; padding-left: 100px;">
+            </div>
+        </div>
+
+        <!-- team work start -->
+        
+                <h1 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;"  data-aos="fade-up">Meet our team</h1>
+                <center><span class="underline"></span> </center>
+
+        
+
+        <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xl-6 col-xxl-6" data-aos="fade-left" style="padding-left: 150px; padding-right: 70px; padding-top: 80px;">
+                        <h1 style="margin-top: 50px;font-family: Georgia, 'Times New Roman', Times, serif;"> Alvin </h1>
+                        <h5>Member</h5>
+                        <h5 class="four1">Duc Duy is originally from Vietnam, moving to London
+                            to study product and furniture design. His signature aesthetic is minimal, modern and emotive. And
+                            he believes great design should be useful, as well as beautiful.</h5><hr>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xl-6 col-xxl-6" style="padding-left: 200px;">
+                        <img src="images/team4.png" alt="" height="300px" width="70%" style="margin-top: 30px;"
+                            data-aos="fade-right">
+                    </div>
+                    
+                </div>        
+
+        <div class="row" style="margin-top: -150px;">
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xl-6 col-xxl-6" style="padding-left: 200px;">
+                <img src="images/team3.png" alt="" height="300px" width="70%" style="margin-top: 30px;"
+                    data-aos="fade-right">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xl-6 col-xxl-6" data-aos="fade-left" style="padding-left: 70px; padding-right: 100px; padding-top: 70px;" >
+                <h1 style="margin-top: 50px;font-family: Georgia, 'Times New Roman', Times, serif;">Calvin Rao</h1>
+                <h5>Member</h5>
+                <h5 class="four1">There isn’t much of the design world Le Cuong hasn’t
+                    explored – and he's done it all over the globe. From working with small studios to multinational
+                    retailers, doing everything from leading product development to working on sourcing and strategy,
+                    Cuong’s passion for design comes from a love of art and science. His pieces are a perfect blend of
+                    the two.</h5><hr>
+            </div>
+            
+        </div>
+
+
+       
+
+    
+        <!-- team work end -->
+
+        <!-- ABOUT US END -->
+
+        <!-- contact us start -->
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xxl-12">
+              <center>  <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;" id="contact">CONTACT US</h1>
+                <span class="underlines"></span></center>
+                <div id="multiImageCarousel" class="carousel slide" data-bs-ride="carousel" style="padding-top: 50px;">
+                    <!-- Indicators -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#multiImageCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#multiImageCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#multiImageCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <!-- Add as many buttons as you have slides -->
+                    </div>
+
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <img src="img/contact-s1.jpg" class="d-block w-100" alt="Image 1">
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <img src="img/contact-s2.jpg" class="d-block w-100" alt="Image 2">
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <img src="img/about2.jpg" class="d-block w-100" alt="Image 3">
+                        </div>
+                        <!-- Additional slides can be added here -->
+                    </div>
+
+                    <!-- Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#multiImageCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#multiImageCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    
+            <div class="row">
+          <!-- Contact-info  -->      
+                <div class="col-lg-5 col-xl-5 col-md-5 col-sm-5 col-xl-lg-5">
+            <div class="contact-info">
+                <h6><i class="fas fa-map-marker-alt"></i> 12 23rd Street SE, Hickory, NC</h6>
+                <h6><a href="mailto:contact@richfieldchairs.com"><i class="fas fa-envelope"></i> contact@richfieldchairs.com</a></h6>
+                <h6><i class="fas fa-phone"></i> +1 (828) 324-7992</h6>
+                <div class="social-icons-ah">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Contact-form -->
+        <div class="col-lg-7 col-xl-7 col-md-7 col-sm-7 col-xl-lg-7">
+            <div class="contact-form">
+                <form>
+                    <div style="display: flex; gap: 10px;">
+                        <input type="text" name="first-name" placeholder="First Name" required>
+                        <input type="text" name="last-name" placeholder="Last Name" required>
+                    </div>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="phone" placeholder="Phone">
+                    <input type="text" name="title" placeholder="Title">
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <center><button type="submit">Submit</button></center>
+                </form>
+            </div>
+            </div>
+         
+        </div>
+                <!--  Map -->
+                <div class="row">
+                <div class="col-lg-2 col-xl-2 col-md-2 col-sm-2 col-xl-lg-2"></div>
+                <div class="col-lg-8 col-xl-8 col-md-8 col-sm-8 col-xl-lg-8">
+                <div class="map-container">
+                    <!-- Replace YOUR_GOOGLE_MAPS_EMBED_LINK with your actual Google Maps embed link -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAPS_EMBED_LINK" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                    ></iframe>
+                </div>
+                </div>
+                <div class="col-lg-2 col-xl-2 col-md-2 col-sm-2 col-xl-lg-2"></div>
+
+            </div>
+            
+        <!-- contact us end -->
+
+        <!-- footer start -->
+
+
+        <footer class="footer">
+            <div class="footer-container">
+        
+                <!-- About Section -->
+                <div class="footer-section footer-about">
+                  <h4 style="font-weight: bold; font-size: 20px;font-family: Georgia, 'Times New Roman', Times, serif;">About Us</h4>
+                  <h6>At Richfield Chairs, we craft high-quality chairs that blend comfort and style. Our dedication to excellence ensures customer satisfaction with every piece.</h6>
+                  <h6><a href="#about" style="color: #f2f2f2;">Learn more</a>.</h6>
+                    </div>
+                    
+        
+                <!-- Quick Links Section -->
+                <div class="footer-section footer-links">
+                    <h4 style="font-weight: bold; font-size: 20px;font-family: Georgia, 'Times New Roman', Times, serif;">Quick Links</h4>
+                    <ul>
+                        <li><a href="#homes">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#our chairs">Our Chairs</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+               
+                    </ul>
+                </div>
+        
+                <!-- Contact Section -->
+                <div class="footer-section footer-contact">
+                    <h4 style="font-weight: bold; font-size: 20px;font-family: Georgia, 'Times New Roman', Times, serif;">Contact Us</h4>
+                    <h6><i class="fas fa-map-marker-alt"></i> 12 23rd Street SE, Hickory</h6>
+                    <h6><i class="fas fa-phone"></i> +1 (828) 324-7992</h6>
+                    <h6><i class="fas fa-envelope"></i> <a href="mailto:contact@richfieldchairs.com">contact@richfieldchairs.com</a></h6>
+                </div>
+        
+                <!-- Social Media Section -->
+                <div class="footer-section footer-social">
+                    <h4 style="font-weight: bold; font-size: 20px;font-family: Georgia, 'Times New Roman', Times, serif;">Follow Us</h4>
+                    <a href="https://www.facebook.com" target="_blank" style="color: blue ;"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter" style="background-color: blue; color: white;"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" style="color: purple;"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in" style="color: white; background-color: blue; width: 20px; font-size: 18px;"></i></a>
+                </div>
+            </div>
+        
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <h6> Richfield Chairs © 2024. Discover our Sitemap.</h6>
+            </div>
+        </footer>
+        <!-- footer end  -->
+
+
+    </div>
+
+
+ 
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) { // Adjust scroll value as needed
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        window.addEventListener('scroll', function () {
+            const loginButton = document.getElementById('login');
+            if (window.scrollY > 50) { // Adjust scroll value as needed
+                loginButton.classList.add('scrolled-button');
+            } else {
+                loginButton.classList.remove('scrolled-button');
+            }
+        });
+        window.addEventListener('scroll', function () {
+            const headElement = document.getElementById('head');
+            if (window.scrollY > 50) { // Adjust scroll value as needed
+                headElement.classList.add('scrolled-head');
+            } else {
+                headElement.classList.remove('scrolled-head');
+            }
+        });
+        window.addEventListener('scroll', function () {
+            const contentElement = document.getElementById('content');
+            if (window.scrollY > 50) { // Adjust the scroll value as needed
+                contentElement.classList.add('hidden');
+            } else {
+                contentElement.classList.remove('hidden');
+            }
+        });
+        setTimeout(function () {
+            const contentElement = document.getElementById('content');
+            contentElement.classList.add('hidden');
+        }, 2000);
+
+        // function showBrand(brand) {
+        //     alert("Showing products for " + brand);
+        // }
+
+        // Function to handle the intersection of elements with the viewport
+        function handleScrollAnimation(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                } else {
+                    entry.target.classList.remove('visible');
+                }
+            });
+        }
+
+        // Setting up the IntersectionObserver
+        const observer = new IntersectionObserver(handleScrollAnimation, {
+            threshold: 0.1 // Trigger when 10% of the element is visible
+        });
+
+        // Observing elements
+        const elementsToAnimate = document.querySelectorAll('.one, #description, #brand-buttons');
+        elementsToAnimate.forEach(element => observer.observe(element));
+
+        // Automatically trigger the modal when the page loads
+        window.onload = function () {
+            var signUpModal = new bootstrap.Modal(document.getElementById('signUpModal'));
+            signUpModal.show();
+        };
+
+        // Handle form submission
+        document.getElementById('signUpForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the default form submission
+            var signUpModal = bootstrap.Modal.getInstance(document.getElementById('signUpModal'));
+            signUpModal.hide(); // Hide the modal on successful sign up
+        });
+
+
+        function showBrand(brandId) {
+            // Hide all brand sections
+            document.querySelectorAll('.brand-details-section').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected brand section
+            document.getElementById(brandId).style.display = 'block';
+        }
+        // team start
+        AOS.init({
+            duration: 1000,  // Animation duration in milliseconds
+            easing: 'ease-in-out',  // Animation easing style
+            once: false,  // Set to false to trigger animations on scroll up and down
+            offset: 120  // Optional: offset (in px) for when animations start
+        });
+// script.js
+$(document).ready(function() {
+  $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 15,
+      nav: false, 
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      responsive: {
+          0: { items: 1 },
+          600: { items: 3 },
+          1000: { items: 4 },
+      }
+  });
+
+  // Custom buttons for previous and next
+  $('.carousel-prev').click(function() {
+      $('.owl-carousel').trigger('prev.owl.carousel');
+  });
+
+  $('.carousel-next').click(function() {
+      $('.owl-carousel').trigger('next.owl.carousel');
+  });
+});
+
+$(function () {
+        $.scrollUp({
+            scrollDistance: 50,
+            scrollSpeed: 1000,
+            scrollText: 'TOP',
+            scrollImg: true,
+        });
+});
+/*!
+ * scrollup v2.4.1
+ * Url: http://markgoodyear.com/labs/scrollup/
+ * Copyright (c) Mark Goodyear — @markgdyr — http://markgoodyear.com
+ * License: MIT
+ */
+ !function (l, o, e) { "use strict"; l.fn.scrollUp = function (o) { l.data(e.body, "scrollUp") || (l.data(e.body, "scrollUp", !0), l.fn.scrollUp.init(o)) }, l.fn.scrollUp.init = function (r) { var s, t, c, i, n, a, d, p = l.fn.scrollUp.settings = l.extend({}, l.fn.scrollUp.defaults, r), f = !1; switch (d = p.scrollTrigger ? l(p.scrollTrigger) : l("<a/>", { id: p.scrollName, href: "#top" }), p.scrollTitle && d.attr("title", p.scrollTitle), d.appendTo("body"), p.scrollImg || p.scrollTrigger || d.html(p.scrollText), d.css({ display: "none", position: "fixed", zIndex: p.zIndex }), p.activeOverlay && l("<div/>", { id: p.scrollName + "-active" }).css({ position: "absolute", top: p.scrollDistance + "px", width: "100%", borderTop: "1px dotted" + p.activeOverlay, zIndex: p.zIndex }).appendTo("body"), p.animation) { case "fade": s = "fadeIn", t = "fadeOut", c = p.animationSpeed; break; case "slide": s = "slideDown", t = "slideUp", c = p.animationSpeed; break; default: s = "show", t = "hide", c = 0 }i = "top" === p.scrollFrom ? p.scrollDistance : l(e).height() - l(o).height() - p.scrollDistance, n = l(o).scroll(function () { l(o).scrollTop() > i ? f || (d[s](c), f = !0) : f && (d[t](c), f = !1) }), p.scrollTarget ? "number" == typeof p.scrollTarget ? a = p.scrollTarget : "string" == typeof p.scrollTarget && (a = Math.floor(l(p.scrollTarget).offset().top)) : a = 0, d.click(function (o) { o.preventDefault(), l("html, body").animate({ scrollTop: a }, p.scrollSpeed, p.easingType) }) }, l.fn.scrollUp.defaults = { scrollName: "scrollUp", scrollDistance: 300, scrollFrom: "top", scrollSpeed: 300, easingType: "linear", animation: "fade", animationSpeed: 200, scrollTrigger: !1, scrollTarget: !1, scrollText: "Scroll to top", scrollTitle: !1, scrollImg: !1, activeOverlay: !1, zIndex: 2147483647 }, l.fn.scrollUp.destroy = function (r) { l.removeData(e.body, "scrollUp"), l("#" + l.fn.scrollUp.settings.scrollName).remove(), l("#" + l.fn.scrollUp.settings.scrollName + "-active").remove(), l.fn.jquery.split(".")[1] >= 7 ? l(o).off("scroll", r) : l(o).unbind("scroll", r) }, l.scrollUp = l.fn.scrollUp }(jQuery, window, document);
+
+    </script>
+</body>
+
+</html>
